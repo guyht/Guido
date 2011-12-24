@@ -1,0 +1,28 @@
+!!! 5
+head
+	title #{title}
+	link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=PT+Sans', type='text/css')
+	link(rel='stylesheet', href='main.css', type='text/css')
+body
+	div.topbar
+		ul
+			li
+				a(href='http://github.com/guyht/glog') Glog
+			li
+				a(href='http://twitter.com/mrwooster') @mrwooster
+	div.title
+		<a href='/'>!{title}</a>
+	- each article in articles
+		div.article
+			div.header
+				div.date !{article.date}
+				div.title
+					<a href='!{article.url}'>!{article.title}</a>
+			div.body !{article.body}
+
+	- if (typeof __404 !== 'undefined' && __404 === true)
+		div._404 404 This article could not be found
+
+	// Please do not remove
+	div.footer
+		a(href='http://github.com/guyht/glog') Powered by Glog
