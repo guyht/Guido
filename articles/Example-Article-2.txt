@@ -1,0 +1,7 @@
+{
+	"title" : "Example article 2",
+	"date" : "12/26/2011",
+	"author" : "Glog"
+}
+
+This is a 2nd test article....
