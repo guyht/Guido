@@ -2,7 +2,7 @@
 head
 	title #{title}
 	link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=PT+Sans', type='text/css')
-	link(rel='stylesheet', href='!{base_url}/main.css', type='text/css')
+	link(rel='stylesheet', href=base_url + ' /main.css', type='text/css')
 body
 	div.topbar
 		ul
@@ -11,7 +11,7 @@ body
 			li
 				a(href='http://twitter.com/mrwooster') @mrwooster
 	div.blog_title
-		<a href='!{base_url}'>!{title}</a>
+		<a href='!{base_url}/'>!{title}</a>
 	- each article in articles
 		div.article
 			div.header
