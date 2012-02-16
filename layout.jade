@@ -17,7 +17,10 @@ body
 			div.header
 				div.title
 					<a href='!{base_url}/!{article.url}/'>!{article.title}</a>
-				div.date !{article.date_str}
+				div.date
+					-if (show_author)
+						!{article.author} - 
+					!{article.date_str}
 			div.body !{article.body}
 
 			- if (typeof single !== 'undefined' && single && disqus_id !== -1)
@@ -33,6 +36,10 @@ body
 					})();
 
 				div#disqus_thread
+
+	- if ((typeof single === 'undefined' || !single) && page_num !== -1)
+		div.next_page
+			<a href='!{base_url}/page/#{page_num + 1}'>Next Page</a>
 
 	// Please do not remove
 	div.footer

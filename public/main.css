@@ -61,7 +61,7 @@ body {
 	width: 900px;
 }
 
-.topbar a {
+a {
 	text-decoration: none;
 	color: #8a8a8a;
 }
@@ -88,3 +88,6 @@ a:hover {
 	text-decoration: none;
 }
 
+.next_page, .footer {
+	text-align: center;
+}
