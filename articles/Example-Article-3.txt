@@ -1,0 +1,9 @@
+{
+	"title" : "Example article",
+	"date" : "10/11/2011",
+	"author" : "Glog",
+  "show_on_home_page" : false
+}
+
+An example of a Glog article. This article will not show on the main
+feed.
