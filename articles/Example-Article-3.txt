@@ -1,6 +1,6 @@
 {
 	"title" : "Example article",
-	"date" : "10/11/2011",
+	"date" : "10/10/2011",
 	"author" : "Glog",
   "show_on_home_page" : false
 }
