@@ -25,7 +25,7 @@ body
 			div.body !{article.body}
 
 			- if (typeof single !== 'undefined' && single && disqus_id !== -1)
-				script(type='text/javascript')
+				script(type='text/javascript').
 					/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 					var disqus_shortname = '!{disqus_id}'; // required: replace example with your forum shortname
 
@@ -47,7 +47,7 @@ body
 		a(href='http://github.com/guyht/glog') Powered by Glog
 
 	- if (typeof analytics_code !== 'undefined' && analytics_code !== null)
-		script(type='text/javascript')
+		script(type='text/javascript').
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', '!{analytics_code}']);
 			_gaq.push(['_trackPageview']);
